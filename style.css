@@ -204,5 +204,27 @@
   a {
     text-decoration: none;
     color: black;
-}
+  }
+
+  /* Utility classes added for Vanilla JS refactoring */
+  .hidden {
+      display: none !important;
+  }
+
+  .error-message {
+      text-align: center;
+      color: #ff3333;
+      margin-top: 20px;
+      font-weight: bold;
+      padding: 10px;
+      background-color: #ffe6e6;
+      border-radius: 5px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+  }
   
+  /* Add padding bottom to body so footer doesn't overlap content */
+  body {
+      padding-bottom: 120px;
+  }

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script src="index.js"></script>
+    <div id="header">
+        <h1>Welcome to Codeforces Visualizer</h1>
+        <img id="image" src="https://codeforces.org/s/73673/images/codeforces-sponsored-by-ton.png" alt="Codeforces">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="body">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter Your User ID" class="search-bar" />
+            <button type="submit" id="searchBtn" class="search-button">Search</button>
+        </div>
+
+        <div id="errorContainer" class="hidden error-message"></div>
+
+        <div id="shimmerContainer" class="hidden">
+            <div class="cart-shimmer">
+                <div class="shimmer-image"></div>
+                <div class="shimmer-details">
+                    <div class="shimmer-line"></div>
+                    <div class="shimmer-line short"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultContainer" class="hidden">
+            <!-- Rendered dynamically via script.js -->
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 My Codeforces Visualizer. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com">Facebook</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
